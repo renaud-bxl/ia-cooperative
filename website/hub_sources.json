@@ -1,0 +1,949 @@
+{
+  "review_date": "2026-11-07",
+  "note": "Bibliography and provenance, not an endorsement or a verified implementation of the proposal.",
+  "categories": [
+    {
+      "id": "distributed",
+      "fr": "Calcul partagé et décentralisation",
+      "en": "Shared and decentralised compute"
+    },
+    {
+      "id": "alternative",
+      "fr": "Autres supports et réutilisation de chaleur",
+      "en": "Alternative media and heat reuse"
+    },
+    {
+      "id": "memory",
+      "fr": "Mémoire, modèles et calcul",
+      "en": "Memory, models and computation"
+    },
+    {
+      "id": "network",
+      "fr": "Réseau, ressources et installation",
+      "en": "Networking, resources and setup"
+    },
+    {
+      "id": "software",
+      "fr": "Les 10 logiciels candidats — non intégrés",
+      "en": "10 candidate tools — not integrated"
+    },
+    {
+      "id": "project",
+      "fr": "Nos 4 expériences — sources et résultats",
+      "en": "Our 4 experiments — source and results"
+    },
+    {
+      "id": "publication",
+      "fr": "Hébergement du site",
+      "en": "Website hosting"
+    }
+  ],
+  "references": [
+    {
+      "id": "1",
+      "title": {
+        "fr": "Borzunov et al. — Distributed Inference and Fine-tuning of Large Language Models Over the Internet. NeurIPS, 2023.",
+        "en": "Borzunov et al. — Distributed Inference and Fine-tuning of Large Language Models Over the Internet. NeurIPS, 2023."
+      },
+      "url": "https://arxiv.org/abs/2312.08361",
+      "label": "arXiv 2312.08361",
+      "note": {
+        "fr": "Petals : inférence collaborative, antécédents et limites de confidentialité.",
+        "en": "Collaborative inference and fine-tuning; relevant prior art and privacy limitations."
+      },
+      "category": "distributed",
+      "extra": [
+        [
+          "Petals · GitHub",
+          "https://github.com/bigscience-workshop/petals"
+        ]
+      ]
+    },
+    {
+      "id": "2",
+      "title": {
+        "fr": "exo labs — exo, dépôt officiel. État consulté le 7 novembre 2026.",
+        "en": "exo labs — exo, official repository. Reviewed 7 November 2026."
+      },
+      "url": "https://github.com/exo-explore/exo",
+      "label": "github.com/exo-explore/exo",
+      "note": {
+        "fr": "Répartition selon la topologie et les ressources. Les performances du dépôt ne sont pas reproduites ici.",
+        "en": "Topology-aware resource placement. Repository performance claims were not reproduced for this project."
+      },
+      "category": "distributed"
+    },
+    {
+      "id": "3",
+      "title": {
+        "fr": "Li et al. — Prima.cpp: Fast 30-70B LLM Inference on Heterogeneous and Low-Resource Home Clusters. Version 3, juillet 2026.",
+        "en": "Li et al. — Prima.cpp: Fast 30–70B LLM Inference on Heterogeneous and Low-Resource Home Clusters. Version 3, July 2026."
+      },
+      "url": "https://arxiv.org/abs/2504.08791",
+      "label": "arXiv 2504.08791",
+      "note": {
+        "fr": "Prépublication ; systèmes hétérogènes domestiques.",
+        "en": "Preprint on heterogeneous, resource-constrained home clusters."
+      },
+      "category": "distributed"
+    },
+    {
+      "id": "4",
+      "title": {
+        "fr": "Learning at home — Hivemind, dépôt officiel.",
+        "en": "Learning at home — Hivemind, official repository."
+      },
+      "url": "https://github.com/learning-at-home/hivemind",
+      "label": "github.com/learning-at-home/hivemind",
+      "note": {
+        "fr": "Briques pour apprentissage décentralisé et tolérance aux interruptions.",
+        "en": "Building blocks for decentralised learning and tolerance of interruptions."
+      },
+      "category": "distributed"
+    },
+    {
+      "id": "5",
+      "title": {
+        "fr": "Douillard et al. — DiLoCo: Distributed Low-Communication Training of Language Models. 2023 ; version 3, 2024.",
+        "en": "Douillard et al. — DiLoCo: Distributed Low-Communication Training of Language Models. 2023; version 3, 2024."
+      },
+      "url": "https://arxiv.org/abs/2311.08105",
+      "label": "arXiv 2311.08105",
+      "note": {
+        "fr": "Apprentissage distribué à communication réduite.",
+        "en": "Distributed training with reduced communication requirements."
+      },
+      "category": "distributed"
+    },
+    {
+      "id": "6",
+      "title": {
+        "fr": "Gensyn — Infrastructure, documentation officielle.",
+        "en": "Gensyn — Infrastructure, official documentation."
+      },
+      "url": "https://www.gensyn.ai/infrastructure",
+      "label": "gensyn.ai/infrastructure",
+      "note": {
+        "fr": "Communication pair à pair, identité sur chaîne et vérification : description du projet, pas validation indépendante.",
+        "en": "Project documentation of peer-to-peer communication, on-chain identity and verification; not independent validation."
+      },
+      "category": "distributed"
+    },
+    {
+      "id": "7",
+      "title": {
+        "fr": "Ethereum — Scaling et Zero-knowledge rollups, documentation officielle.",
+        "en": "Ethereum — Zero-knowledge rollups, official documentation."
+      },
+      "url": "https://ethereum.org/developers/docs/scaling/zk-rollups/",
+      "label": "ethereum.org — ZK-rollups",
+      "note": {
+        "fr": "Séparation entre exécution hors chaîne et vérification/règlement.",
+        "en": "Execution off-chain and settlement or verification on-chain."
+      },
+      "category": "distributed"
+    },
+    {
+      "id": "8",
+      "title": {
+        "fr": "Éduscol, revue Technologie — Rubriques innovation, Q.rad / Qarnot.",
+        "en": "Éduscol, Technologie magazine — Innovation, Q.rad / Qarnot."
+      },
+      "url": "https://sti.eduscol.education.fr/sites/eduscol.education.fr.sti/files/ressources/techniques/11658/11658-rubriques-innovation-revue-technologie.pdf",
+      "label": "Éduscol — archive Technologie, Q.rad",
+      "note": {
+        "fr": "Document technique institutionnel sur le principe du radiateur numérique ; ne décrit pas une offre actuelle.",
+        "en": "Historical institutional technical document about Qarnot’s digital radiator; not a current product specification."
+      },
+      "category": "alternative"
+    },
+    {
+      "id": "9",
+      "title": {
+        "fr": "heata — Sustainable cloud compute, présentation officielle.",
+        "en": "heata — Sustainable cloud compute, official presentation."
+      },
+      "url": "https://heata.co/compute",
+      "label": "heata.co/compute",
+      "note": {
+        "fr": "Calcul distribué dans les logements et valorisation de chaleur. Les gains commerciaux annoncés ne sont pas repris.",
+        "en": "Distributed computing and heat reuse in homes. Commercial savings claims are not adopted here."
+      },
+      "category": "alternative"
+    },
+    {
+      "id": "10",
+      "title": {
+        "fr": "Organick et al. — Random access in large-scale DNA data storage. Nature Biotechnology, 2018.",
+        "en": "Organick et al. — Random access in large-scale DNA data storage. Nature Biotechnology, 2018."
+      },
+      "url": "https://www.nature.com/articles/nbt.4079",
+      "label": "doi:10.1038/nbt.4079",
+      "note": {
+        "fr": "Stockage et récupération individuelle de fichiers dans l’ADN.",
+        "en": "Storage and individual retrieval of files encoded in DNA."
+      },
+      "category": "alternative"
+    },
+    {
+      "id": "11",
+      "title": {
+        "fr": "Yim et al. — Robust direct digital-to-biological data storage in living cells. Nature Chemical Biology, 2021.",
+        "en": "Yim et al. — Robust direct digital-to-biological data storage in living cells. Nature Chemical Biology, 2021."
+      },
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33432236/",
+      "label": "PubMed 33432236",
+      "note": {
+        "fr": "Démonstration numérique vers biologique dans des bactéries.",
+        "en": "Digital-to-biological data storage demonstrated in bacteria."
+      },
+      "category": "alternative"
+    },
+    {
+      "id": "12",
+      "title": {
+        "fr": "Zhang et al. — Parallel molecular data storage by printing epigenetic bits on DNA. Nature, 2024.",
+        "en": "Zhang et al. — Parallel molecular data storage by printing epigenetic bits on DNA. Nature, 2024."
+      },
+      "url": "https://www.nature.com/articles/s41586-024-08040-5",
+      "label": "doi:10.1038/s41586-024-08040-5",
+      "note": {
+        "fr": "Écriture par modifications épigénétiques sur supports préparés.",
+        "en": "Epigenetic modifications used to write data on prepared DNA substrates."
+      },
+      "category": "alternative"
+    },
+    {
+      "id": "13",
+      "title": {
+        "fr": "Random access and semantic search in DNA data storage enabled by Cas9 and machine-guided design. Nature Communications, 2025.",
+        "en": "Random access and semantic search in DNA data storage enabled by Cas9 and machine-guided design. Nature Communications, 2025."
+      },
+      "url": "https://www.nature.com/articles/s41467-025-61264-5",
+      "label": "doi:10.1038/s41467-025-61264-5",
+      "note": {
+        "fr": "Adressage de fichiers et recherche moléculaire par similarité.",
+        "en": "File addressing and molecular similarity search."
+      },
+      "category": "alternative"
+    },
+    {
+      "id": "14",
+      "title": {
+        "fr": "Luo et al. — Thermo-Responsive Living Microspheroids Enable a Regenerative Living Disk-Drive System for DNA Data Storage. Advanced Materials, 2026.",
+        "en": "Luo et al. — Thermo-Responsive Living Microspheroids Enable a Regenerative Living Disk-Drive System for DNA Data Storage. Advanced Materials, 2026."
+      },
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42335403/",
+      "label": "PubMed 42335403 ; doi:10.1002/adma.73806",
+      "note": {
+        "fr": "Démonstration biologique de petite taille ; distinguer résultats expérimentaux et bornes de modèle.",
+        "en": "Small experimental biological storage system. Measured results must be distinguished from theoretical architecture-level bounds."
+      },
+      "category": "alternative",
+      "extra": [
+        [
+          "DOI · Wiley",
+          "https://doi.org/10.1002/adma.73806"
+        ]
+      ]
+    },
+    {
+      "id": "15",
+      "title": {
+        "fr": "Microsoft Research — Project Silica’s advances in glass storage technology. 18 février 2026.",
+        "en": "Microsoft Research — Project Silica’s advances in glass storage technology. 18 February 2026."
+      },
+      "url": "https://www.microsoft.com/en-us/research/blog/project-silicas-advances-in-glass-storage-technology/",
+      "label": "Microsoft Research — Project Silica, 2026",
+      "note": {
+        "fr": "Présentation par l’équipe de la publication Nature, doi:10.1038/s41586-025-10042-w.",
+        "en": "The research team’s account of glass storage work published in Nature; DOI 10.1038/s41586-025-10042-w."
+      },
+      "category": "alternative",
+      "extra": [
+        [
+          "Nature · DOI",
+          "https://doi.org/10.1038/s41586-025-10042-w"
+        ]
+      ]
+    },
+    {
+      "id": "16",
+      "title": {
+        "fr": "IBM Research — A 64-core mixed-signal in-memory compute chip based on phase-change memory for deep neural network inference. Nature Electronics, 2023.",
+        "en": "IBM Research — A 64-core mixed-signal in-memory compute chip based on phase-change memory for deep neural network inference. Nature Electronics, 2023."
+      },
+      "url": "https://research.ibm.com/publications/a-64-core-mixed-signal-in-memory-compute-chip-based-on-phase-change-memory-for-deep-neural-network-inference",
+      "label": "IBM Research — puce analogique 64 cœurs",
+      "note": {
+        "fr": "Démonstration de calcul dans la mémoire, sur les réseaux testés par les auteurs.",
+        "en": "In-memory computing demonstrated on the neural networks tested by the authors."
+      },
+      "category": "alternative"
+    },
+    {
+      "id": "17",
+      "title": {
+        "fr": "Lam et al. — Neuromorphic photonic computing with an electro-optic analog memory. Nature Communications, 2026.",
+        "en": "Lam et al. — Neuromorphic photonic computing with an electro-optic analog memory. Nature Communications, 2026."
+      },
+      "url": "https://www.nature.com/articles/s41467-026-69084-x",
+      "label": "doi:10.1038/s41467-026-69084-x",
+      "note": {
+        "fr": "Mémoire analogique électronique associée à la photonique ; démonstration sur MNIST.",
+        "en": "Electronic analog memory coupled to photonics; demonstration on MNIST."
+      },
+      "category": "alternative"
+    },
+    {
+      "id": "18",
+      "title": {
+        "fr": "Jordan et al. — Open and remotely accessible Neuroplatform for research in wetware computing. Frontiers in Artificial Intelligence, 2024.",
+        "en": "Jordan et al. — Open and remotely accessible Neuroplatform for research in wetware computing. Frontiers in Artificial Intelligence, 2024."
+      },
+      "url": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2024.1376042/full",
+      "label": "doi:10.3389/frai.2024.1376042",
+      "note": {
+        "fr": "Plateforme de recherche sur les réseaux neuronaux biologiques.",
+        "en": "Research platform for biological neural networks."
+      },
+      "category": "alternative"
+    },
+    {
+      "id": "19",
+      "title": {
+        "fr": "Microsoft — BitNet, dépôt officiel et rapports associés.",
+        "en": "Microsoft — BitNet, official repository and related reports."
+      },
+      "url": "https://github.com/microsoft/BitNet",
+      "label": "github.com/microsoft/BitNet",
+      "note": {
+        "fr": "Modèles ternaires et moteurs spécifiques ; pas de garantie de conversion d’un modèle quelconque.",
+        "en": "Ternary models and dedicated engines; not a guarantee that any model can be converted."
+      },
+      "category": "memory"
+    },
+    {
+      "id": "20",
+      "title": {
+        "fr": "Cheng et al. — Conditional Memory via Scalable Lookup: A New Axis of Sparsity for Large Language Models. 2026, version 2.",
+        "en": "Cheng et al. — Conditional Memory via Scalable Lookup: A New Axis of Sparsity for Large Language Models. 2026, version 2."
+      },
+      "url": "https://arxiv.org/abs/2601.07372",
+      "label": "arXiv 2601.07372",
+      "note": {
+        "fr": "Engram : mémoire conditionnelle intégrée au modèle.",
+        "en": "Engram: conditional memory integrated into a model."
+      },
+      "category": "memory"
+    },
+    {
+      "id": "21",
+      "title": {
+        "fr": "Ma et al. — TF-Engram: A Train-Free Engram with SSD-Backed Memory for Large Language Models. Juillet 2026.",
+        "en": "Ma et al. — TF-Engram: A Train-Free Engram with SSD-Backed Memory for Large Language Models. July 2026."
+      },
+      "url": "https://arxiv.org/abs/2607.07388",
+      "label": "arXiv 2607.07388",
+      "note": {
+        "fr": "Prépublication ; tables de mémoire sur plusieurs niveaux de stockage.",
+        "en": "Preprint on memory tables spanning multiple storage tiers."
+      },
+      "category": "memory"
+    },
+    {
+      "id": "22",
+      "title": {
+        "fr": "Gu et Dao — Mamba: Linear-Time Sequence Modeling with Selective State Spaces. 2023 ; version 2, 2024.",
+        "en": "Gu and Dao — Mamba: Linear-Time Sequence Modeling with Selective State Spaces. 2023; version 2, 2024."
+      },
+      "url": "https://arxiv.org/abs/2312.00752",
+      "label": "arXiv 2312.00752",
+      "note": {
+        "fr": "Architecture récurrente à états sélectifs.",
+        "en": "Sequence modelling with selective state spaces."
+      },
+      "category": "memory"
+    },
+    {
+      "id": "23",
+      "title": {
+        "fr": "Kwon et al. — Efficient Memory Management for Large Language Model Serving with PagedAttention. SOSP, 2023.",
+        "en": "Kwon et al. — Efficient Memory Management for Large Language Model Serving with PagedAttention. SOSP, 2023."
+      },
+      "url": "https://arxiv.org/abs/2309.06180",
+      "label": "arXiv 2309.06180",
+      "note": {
+        "fr": "Gestion des caches de clés et valeurs dans vLLM.",
+        "en": "Key-value cache management for LLM serving in vLLM."
+      },
+      "category": "memory"
+    },
+    {
+      "id": "24",
+      "title": {
+        "fr": "Dao et al. — FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness. NeurIPS, 2022.",
+        "en": "Dao et al. — FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness. NeurIPS, 2022."
+      },
+      "url": "https://arxiv.org/abs/2205.14135",
+      "label": "arXiv 2205.14135",
+      "note": {
+        "fr": "Réduction de certains échanges mémoire de l’attention exacte.",
+        "en": "Reducing memory traffic in exact attention computation."
+      },
+      "category": "memory"
+    },
+    {
+      "id": "25",
+      "title": {
+        "fr": "Lewis et al. — Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks. 2020.",
+        "en": "Lewis et al. — Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks. 2020."
+      },
+      "url": "https://arxiv.org/abs/2005.11401",
+      "label": "arXiv 2005.11401",
+      "note": {
+        "fr": "Association entre un modèle et une mémoire documentaire externe.",
+        "en": "Combining a model with external documentary memory."
+      },
+      "category": "memory"
+    },
+    {
+      "id": "26",
+      "title": {
+        "fr": "Dettmers et al. — QLoRA: Efficient Finetuning of Quantized LLMs. 2023.",
+        "en": "Dettmers et al. — QLoRA: Efficient Finetuning of Quantized LLMs. 2023."
+      },
+      "url": "https://arxiv.org/abs/2305.14314",
+      "label": "arXiv 2305.14314",
+      "note": {
+        "fr": "Adaptation avec poids de base quantifiés et adaptateurs entraînables.",
+        "en": "Fine-tuning using quantised base weights and trainable adapters."
+      },
+      "category": "memory"
+    },
+    {
+      "id": "27",
+      "title": {
+        "fr": "Kadav et al. — Softmax Reparameterization for Output-Head Quantization. Septembre 2026, version 2.",
+        "en": "Kadav et al. — Softmax Reparameterization for Output-Head Quantization. September 2026, version 2."
+      },
+      "url": "https://arxiv.org/abs/2609.31291",
+      "label": "arXiv 2609.31291",
+      "note": {
+        "fr": "Prépublication ; antécédent explicite du centrage préservant les sorties avant quantification.",
+        "en": "Preprint and explicit prior art for centring that preserves outputs before quantisation."
+      },
+      "category": "memory"
+    },
+    {
+      "id": "28",
+      "title": {
+        "fr": "Chen et al. — Progressive Mixed-Precision Decoding for Efficient LLM Inference. 2024 ; version 2, 2025.",
+        "en": "Chen et al. — Progressive Mixed-Precision Decoding for Efficient LLM Inference. 2024; version 2, 2025."
+      },
+      "url": "https://arxiv.org/abs/2410.13461",
+      "label": "arXiv 2410.13461",
+      "note": {
+        "fr": "Précision modulée selon les phases de l’inférence.",
+        "en": "Varying numerical precision across inference stages."
+      },
+      "category": "memory"
+    },
+    {
+      "id": "29",
+      "title": {
+        "fr": "Mussmann et Ermon — Learning and Inference via Maximum Inner Product Search. ICML, 2016.",
+        "en": "Mussmann and Ermon — Learning and Inference via Maximum Inner Product Search. ICML, 2016."
+      },
+      "url": "https://proceedings.mlr.press/v48/mussmann16",
+      "label": "PMLR 48, p. 2587–2596",
+      "note": {
+        "fr": "Lien entre recherche de produits scalaires et inférence probabiliste.",
+        "en": "Relationship between maximum inner-product search and probabilistic inference."
+      },
+      "category": "memory"
+    },
+    {
+      "id": "30",
+      "title": {
+        "fr": "Apple — MacBook Pro 14 pouces, M3 Pro ou M3 Max, novembre 2023 : caractéristiques techniques.",
+        "en": "Apple — MacBook Pro 14-inch, M3 Pro or M3 Max, November 2023: technical specifications."
+      },
+      "url": "https://support.apple.com/en-us/117736",
+      "label": "support.apple.com/117736",
+      "note": {
+        "fr": "Mémoire unifiée et configurations matérielles ; aucune mesure du Mac de l’utilisateur.",
+        "en": "Unified memory and hardware configurations; no measurement of Renaud’s own Mac."
+      },
+      "category": "memory"
+    },
+    {
+      "id": "31",
+      "title": {
+        "fr": "Parallel molecular computation on digital data stored in DNA. PNAS, 2023.",
+        "en": "Parallel molecular computation on digital data stored in DNA. PNAS, 2023."
+      },
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10500265/",
+      "label": "doi:10.1073/pnas.2217330120",
+      "note": {
+        "fr": "Calcul moléculaire sur des registres expérimentaux ; ne démontre pas un LLM moléculaire.",
+        "en": "Molecular computation on experimental registers; not a demonstration of a molecular LLM."
+      },
+      "category": "alternative"
+    },
+    {
+      "id": "32",
+      "title": {
+        "fr": "Linux kernel — Control Group v2",
+        "en": "Linux kernel — Control Group v2"
+      },
+      "url": "https://cdn.kernel.org/doc/html/latest/admin-guide/cgroup-v2.html",
+      "note": {
+        "fr": "Contrôle de ressources sous Linux ; ne constitue pas une limite GPU portable.",
+        "en": "Linux resource control; not a portable GPU memory limit."
+      },
+      "extra": [],
+      "category": "network"
+    },
+    {
+      "id": "33",
+      "title": {
+        "fr": "gRPC — Core concepts and flow control",
+        "en": "gRPC — Core concepts and flow control"
+      },
+      "url": "https://grpc.io/docs/what-is-grpc/core-concepts/",
+      "note": {
+        "fr": "Concepts de transport et contrôle de flux ; protocole du projet encore à construire.",
+        "en": "Transport and flow control concepts; the project protocol still needs to be built."
+      },
+      "extra": [
+        [
+          "Flow control",
+          "https://grpc.io/docs/guides/flow-control/"
+        ]
+      ],
+      "category": "network"
+    },
+    {
+      "id": "34",
+      "title": {
+        "fr": "MLX — Distributed communication",
+        "en": "MLX — Distributed communication"
+      },
+      "url": "https://ml-explore.github.io/mlx/build/html/usage/distributed.html",
+      "note": {
+        "fr": "Opérations distribuées et transports documentés par MLX.",
+        "en": "Distributed operations and transports documented by MLX."
+      },
+      "extra": [],
+      "category": "network"
+    },
+    {
+      "id": "35",
+      "title": {
+        "fr": "RFC 6762 — Multicast DNS",
+        "en": "RFC 6762 — Multicast DNS"
+      },
+      "url": "https://www.rfc-editor.org/rfc/rfc6762",
+      "note": {
+        "fr": "Découverte sur un lien local ; ne fournit pas un annuaire mondial.",
+        "en": "Discovery on a local link; not a global directory."
+      },
+      "extra": [],
+      "category": "network"
+    },
+    {
+      "id": "36",
+      "title": {
+        "fr": "RFC 8489 — Session Traversal Utilities for NAT (STUN)",
+        "en": "RFC 8489 — Session Traversal Utilities for NAT (STUN)"
+      },
+      "url": "https://www.rfc-editor.org/rfc/rfc8489",
+      "note": {
+        "fr": "Aide à connaître les adresses et à établir certains chemins réseau.",
+        "en": "Helps discover addresses and establish some network paths."
+      },
+      "extra": [],
+      "category": "network"
+    },
+    {
+      "id": "37",
+      "title": {
+        "fr": "RFC 8656 — Traversal Using Relays around NAT (TURN)",
+        "en": "RFC 8656 — Traversal Using Relays around NAT (TURN)"
+      },
+      "url": "https://www.rfc-editor.org/rfc/rfc8656",
+      "note": {
+        "fr": "Relais lorsque la connexion directe n’est pas disponible ; nécessite un service accessible.",
+        "en": "Relaying when direct connectivity is unavailable; requires a reachable service."
+      },
+      "extra": [],
+      "category": "network"
+    },
+    {
+      "id": "38",
+      "title": {
+        "fr": "Tailscale / Headscale — Private networking",
+        "en": "Tailscale / Headscale — Private networking"
+      },
+      "url": "https://tailscale.com/docs/how-to/quickstart",
+      "note": {
+        "fr": "Option pour un premier cercle privé ; configuration et confiance restent nécessaires.",
+        "en": "An option for an initial private group; configuration and trust are still necessary."
+      },
+      "extra": [
+        [
+          "Headscale",
+          "https://github.com/juanfont/headscale"
+        ]
+      ],
+      "category": "network"
+    },
+    {
+      "id": "39",
+      "title": {
+        "fr": "Python / Ollama — Runtime and generate API",
+        "en": "Python / Ollama — Runtime and generate API"
+      },
+      "url": "https://www.python.org/downloads/",
+      "note": {
+        "fr": "Python pour le socle hors ligne et API Ollama pour le client de mesure locale séparé.",
+        "en": "Python for the offline foundation and Ollama API for the separate local measurement client."
+      },
+      "extra": [
+        [
+          "Ollama · generate API",
+          "https://docs.ollama.com/api/generate"
+        ],
+        [
+          "Ollama · FAQ",
+          "https://docs.ollama.com/faq"
+        ],
+        [
+          "Python · SQLite",
+          "https://docs.python.org/3/library/sqlite3.html"
+        ]
+      ],
+      "category": "network"
+    },
+    {
+      "id": "S1",
+      "title": {
+        "fr": "Ollama — dépôt officiel",
+        "en": "Ollama — official repository"
+      },
+      "url": "https://github.com/ollama/ollama",
+      "note": {
+        "fr": "API locale simple pour mesurer un modèle déjà installé. Ce n’est pas le moteur de partage entre participants. Désactiver le cloud côté serveur pour une référence locale.",
+        "en": "Local measurement baseline candidate; not the participant-sharing engine. No real model was run in this repository’s validation."
+      },
+      "category": "software",
+      "extra": [
+        [
+          "Documentation",
+          "https://docs.ollama.com/api/generate"
+        ],
+        [
+          "Commit c053d1e",
+          "https://github.com/ollama/ollama/commit/c053d1e98537f208b24165446369bd376a015999"
+        ]
+      ]
+    },
+    {
+      "id": "S2",
+      "title": {
+        "fr": "MLX — dépôt officiel",
+        "en": "MLX — official repository"
+      },
+      "url": "https://github.com/ml-explore/mlx",
+      "note": {
+        "fr": "Moteur à évaluer en priorité sur Apple Silicon ; opérations distribuées disponibles dans sa documentation. Vérifier modèle, version, OS et transport. Le socle de ce dépôt ne l’intègre pas encore.",
+        "en": "Apple Silicon compute candidate. Check the model, operating system and transport before integration."
+      },
+      "category": "software",
+      "extra": [
+        [
+          "Documentation",
+          "https://ml-explore.github.io/mlx/build/html/usage/distributed.html"
+        ],
+        [
+          "Commit fc344c9",
+          "https://github.com/ml-explore/mlx/commit/fc344c986c4169d99f76b5d95ae6b4a58a359a63"
+        ]
+      ]
+    },
+    {
+      "id": "S3",
+      "title": {
+        "fr": "llama.cpp — dépôt officiel",
+        "en": "llama.cpp — official repository"
+      },
+      "url": "https://github.com/ggml-org/llama.cpp",
+      "note": {
+        "fr": "Référence d’inférence C/C++ et formats quantifiés, dont Metal et CPU. Le module RPC est signalé expérimental et non sûr par ses auteurs ; essais isolés uniquement, hors réseau ouvert.",
+        "en": "C/C++ inference baseline candidate. Its RPC component is described as experimental and insecure: isolated tests only."
+      },
+      "category": "software",
+      "extra": [
+        [
+          "Documentation",
+          "https://github.com/ggml-org/llama.cpp/blob/master/tools/rpc/README.md"
+        ],
+        [
+          "Commit ca89968",
+          "https://github.com/ggml-org/llama.cpp/commit/ca89968a23a13e571a6b802a9891d22763153b61"
+        ]
+      ]
+    },
+    {
+      "id": "S4",
+      "title": {
+        "fr": "exo — dépôt officiel",
+        "en": "exo — official repository"
+      },
+      "url": "https://github.com/exo-explore/exo",
+      "note": {
+        "fr": "Candidat à comparer avant de développer un moteur distribué maison. La liste des machines explicitement testées consultée ne cite pas le M3 Pro. Vérifier sa compatibilité ; ne pas présumer le support de tous les PC.",
+        "en": "Distributed inference candidate. Compatibility with each test machine must be established."
+      },
+      "category": "software",
+      "extra": [
+        [
+          "Documentation",
+          "https://github.com/exo-explore/exo/blob/main/PLATFORMS.md"
+        ],
+        [
+          "Commit a60b956",
+          "https://github.com/exo-explore/exo/commit/a60b95698ca81737d367443674dd5563cbc9559b"
+        ]
+      ]
+    },
+    {
+      "id": "S5",
+      "title": {
+        "fr": "Petals — dépôt officiel",
+        "en": "Petals — official repository"
+      },
+      "url": "https://github.com/bigscience-workshop/petals",
+      "note": {
+        "fr": "Antécédent d’inférence par blocs distribués et groupes privés. Activité du dépôt et compatibilité à vérifier avant installation ; données sensibles uniquement dans un groupe de confiance explicite.",
+        "en": "Collaborative inference prior art. Compatibility, maintenance and privacy need evaluation."
+      },
+      "category": "software",
+      "extra": [
+        [
+          "Documentation",
+          "https://github.com/bigscience-workshop/petals"
+        ],
+        [
+          "Commit 22afba6",
+          "https://github.com/bigscience-workshop/petals/commit/22afba627a7eb4fcfe9418c49472c6a51334b8ac"
+        ]
+      ]
+    },
+    {
+      "id": "S6",
+      "title": {
+        "fr": "Hivemind — dépôt officiel",
+        "en": "Hivemind — official repository"
+      },
+      "url": "https://github.com/learning-at-home/hivemind",
+      "note": {
+        "fr": "Référence pour découverte et apprentissage décentralisé sur PyTorch. Son rôle principal ne correspond pas à un moteur de chat grand public prêt à brancher.",
+        "en": "Decentralised learning reference; not a ready-made consumer chat application."
+      },
+      "category": "software",
+      "extra": [
+        [
+          "Documentation",
+          "https://github.com/learning-at-home/hivemind"
+        ],
+        [
+          "Commit 4bd43b7",
+          "https://github.com/learning-at-home/hivemind/commit/4bd43b77895019b20d18d81d0d0c1a5ab9a10847"
+        ]
+      ]
+    },
+    {
+      "id": "S7",
+      "title": {
+        "fr": "gRPC — dépôt officiel",
+        "en": "gRPC — official repository"
+      },
+      "url": "https://github.com/grpc/grpc",
+      "note": {
+        "fr": "Messages typés, flux et délais pour un futur protocole privé. Il reste à implémenter l’authentification, les limites, l’admission et les reprises de notre protocole.",
+        "en": "Typed messages, streaming and deadlines. Application authentication and admission control remain to be implemented."
+      },
+      "category": "software",
+      "extra": [
+        [
+          "Documentation",
+          "https://grpc.io/docs/languages/python/"
+        ],
+        [
+          "Commit 952c8d4",
+          "https://github.com/grpc/grpc/commit/952c8d46d90530ddc497d22bdf4b4ccfce4e903c"
+        ]
+      ]
+    },
+    {
+      "id": "S8",
+      "title": {
+        "fr": "psutil — dépôt officiel",
+        "en": "psutil — official repository"
+      },
+      "url": "https://github.com/giampaolo/psutil",
+      "note": {
+        "fr": "Mesures des processus, mémoire et charge CPU sur plusieurs OS. Observer n’impose pas de limite dure ; la VRAM et la mémoire unifiée demandent une stratégie propre au moteur.",
+        "en": "Local process and memory monitoring. Observation alone does not enforce resource limits."
+      },
+      "category": "software",
+      "extra": [
+        [
+          "Documentation",
+          "https://github.com/giampaolo/psutil"
+        ],
+        [
+          "Commit d187ee2",
+          "https://github.com/giampaolo/psutil/commit/d187ee23b1a909d7e371b519fec2cf621c50577f"
+        ]
+      ]
+    },
+    {
+      "id": "S9",
+      "title": {
+        "fr": "Prometheus — dépôt officiel",
+        "en": "Prometheus — official repository"
+      },
+      "url": "https://github.com/prometheus/prometheus",
+      "note": {
+        "fr": "Collecte des métriques du futur pilote. À ajouter quand plusieurs vrais nœuds existent ; aucun prompt ni contenu de session dans les métriques.",
+        "en": "Metrics collection for a future pilot. Never include prompts or session contents in metrics."
+      },
+      "category": "software",
+      "extra": [
+        [
+          "Documentation",
+          "https://github.com/prometheus/prometheus"
+        ],
+        [
+          "Commit dd7aa6b",
+          "https://github.com/prometheus/prometheus/commit/dd7aa6b0f19f4e952a55cbebd6e15458fe0ad9c6"
+        ]
+      ]
+    },
+    {
+      "id": "S10",
+      "title": {
+        "fr": "Headscale — dépôt officiel",
+        "en": "Headscale — official repository"
+      },
+      "url": "https://github.com/juanfont/headscale",
+      "note": {
+        "fr": "Option de serveur de contrôle auto-hébergé pour un réseau privé utilisant des clients compatibles. Ne remplace ni la confiance entre hôtes ni l’authentification applicative ; ce composant n’accélère pas Internet.",
+        "en": "Option for a self-hosted private-network control service. Does not replace application authentication."
+      },
+      "category": "software",
+      "extra": [
+        [
+          "Documentation",
+          "https://github.com/juanfont/headscale"
+        ],
+        [
+          "Commit 48416ce",
+          "https://github.com/juanfont/headscale/commit/48416ce0894ef7bef0ef9c064609b4aa76a0d9b6"
+        ]
+      ]
+    },
+    {
+      "id": "P1",
+      "title": {
+        "fr": "Calcul du parc et des quotas",
+        "en": "Pool and quota calculations"
+      },
+      "url": "https://github.com/renaud-bxl/ia-cooperative/blob/main/experiments/pool_model.py",
+      "note": {
+        "fr": "Capacités agrégées selon disponibilité et réplication ; pas de VRAM unique.",
+        "en": "Aggregated capacity with availability and replication assumptions; not a single VRAM pool."
+      },
+      "category": "project",
+      "extra": [
+        [
+          "JSON",
+          "https://github.com/renaud-bxl/ia-cooperative/blob/main/experiments/pool_results.json"
+        ]
+      ]
+    },
+    {
+      "id": "P2",
+      "title": {
+        "fr": "Coût analytique du réseau",
+        "en": "Analytical network costs"
+      },
+      "url": "https://github.com/renaud-bxl/ia-cooperative/blob/main/experiments/network_model.py",
+      "note": {
+        "fr": "Scénarios sériels sans chevauchement, avec temps de calcul fixé.",
+        "en": "Serial scenarios without overlap and with fixed compute time."
+      },
+      "category": "project",
+      "extra": [
+        [
+          "JSON",
+          "https://github.com/renaud-bxl/ia-cooperative/blob/main/experiments/network_results.json"
+        ]
+      ]
+    },
+    {
+      "id": "P3",
+      "title": {
+        "fr": "Expérience numérique synthétique",
+        "en": "Synthetic numerical experiment"
+      },
+      "url": "https://github.com/renaud-bxl/ia-cooperative/blob/main/experiments/experiment.py",
+      "note": {
+        "fr": "Exploration mathématique ; pas de résultat sur un modèle de langage réel.",
+        "en": "Mathematical exploration; not a result from a real language model."
+      },
+      "category": "project",
+      "extra": [
+        [
+          "JSON",
+          "https://github.com/renaud-bxl/ia-cooperative/blob/main/experiments/results.json"
+        ]
+      ]
+    },
+    {
+      "id": "P4",
+      "title": {
+        "fr": "Simulation de files de demandes",
+        "en": "Request queue simulation"
+      },
+      "url": "https://github.com/renaud-bxl/ia-cooperative/blob/main/experiments/service_simulation.py",
+      "note": {
+        "fr": "8 scénarios, 20 graines et 1 000 demandes par scénario et graine ; 160 000 au total. Les scénarios saturés ne sont pas stationnaires.",
+        "en": "8 scenarios, 20 seeds and 1,000 requests per scenario and seed: 160,000 total. Overloaded scenarios are not stationary."
+      },
+      "category": "project",
+      "extra": [
+        [
+          "JSON",
+          "https://github.com/renaud-bxl/ia-cooperative/blob/main/experiments/service_results.json"
+        ]
+      ]
+    },
+    {
+      "id": "C1",
+      "title": {
+        "fr": "GitHub Pages — Publishing source",
+        "en": "GitHub Pages — Publishing source"
+      },
+      "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site",
+      "note": {
+        "fr": "Configuration de la publication de cette page depuis le dépôt.",
+        "en": "Configuration for publishing this page from its repository."
+      },
+      "category": "publication"
+    }
+  ]
+}

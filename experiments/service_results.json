@@ -1,0 +1,1250 @@
+{
+  "status": "simulation, not hardware benchmark",
+  "assumptions": {
+    "seeds": [
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119
+    ],
+    "requests_per_replication": 1000,
+    "input_tokens": 512,
+    "output_tokens": 64,
+    "total_compute_prefill_seconds": 1.28,
+    "total_compute_decode_seconds_per_token": 0.08,
+    "latency_jitter_cv": 0.3,
+    "compute_uniform_factor": [
+      0.9,
+      1.1
+    ],
+    "conversations_per_group": 1,
+    "batching": false,
+    "warm_weights": true,
+    "failure_mean_active_seconds_per_node": 1800,
+    "detection_seconds": 2,
+    "warm_replacement_seconds": 3,
+    "correlated_failures": false,
+    "recovery_failures": false,
+    "shared_uplink_contention": false,
+    "cold_model_loading": false,
+    "stable_queue_warmup_discard": 0
+  },
+  "results": [
+    {
+      "id": "local_1",
+      "name": "1 machine locale",
+      "groups": 1,
+      "nodes": 1,
+      "mbps": 0,
+      "one_way": 0,
+      "rate": 0.1,
+      "faults": false,
+      "requests_simulated": 20000,
+      "nominal_first_s": 1.28,
+      "nominal_service_s": 6.32,
+      "nominal_isolated_tokens_per_s": 10.126582278481012,
+      "offered_load": 0.6321201653092121,
+      "stable_under_assumptions": true,
+      "latency_p50_s": 9.350663745362908,
+      "latency_p95_s": 26.510690987519272,
+      "ttft_p50_s": 4.311182085956373,
+      "ttft_p95_s": 21.41473038273583,
+      "wait_p50_s": 3.0287458450063696,
+      "wait_p95_s": 20.159411428950705,
+      "over_30s_fraction": 0.03125,
+      "output_tokens_per_s_mean": 6.381657006797075,
+      "fault_requests": 0,
+      "fault_events": 0,
+      "p95_across_replications_min": 21.323676282853153,
+      "p95_across_replications_max": 30.789404559513184,
+      "replicas": [
+        {
+          "seed": 100,
+          "latency_p95": 25.96610847910778,
+          "output_tokens_per_s": 6.359210026770227,
+          "busy_fraction": 0.629250416757724
+        },
+        {
+          "seed": 101,
+          "latency_p95": 25.396981298465878,
+          "output_tokens_per_s": 6.2261871165386085,
+          "busy_fraction": 0.6133732651442192
+        },
+        {
+          "seed": 102,
+          "latency_p95": 23.830951394144915,
+          "output_tokens_per_s": 5.950872210088324,
+          "busy_fraction": 0.5892277864074762
+        },
+        {
+          "seed": 103,
+          "latency_p95": 26.837159280043746,
+          "output_tokens_per_s": 6.458634969672612,
+          "busy_fraction": 0.6384625656325794
+        },
+        {
+          "seed": 104,
+          "latency_p95": 26.799425668391994,
+          "output_tokens_per_s": 6.5821813553474495,
+          "busy_fraction": 0.650042948098342
+        },
+        {
+          "seed": 105,
+          "latency_p95": 22.84259852220332,
+          "output_tokens_per_s": 6.310805842442644,
+          "busy_fraction": 0.6245842902845608
+        },
+        {
+          "seed": 106,
+          "latency_p95": 26.50394881711938,
+          "output_tokens_per_s": 6.451612977107739,
+          "busy_fraction": 0.6354856996525167
+        },
+        {
+          "seed": 107,
+          "latency_p95": 25.65416671105131,
+          "output_tokens_per_s": 6.164171972078874,
+          "busy_fraction": 0.609261211548145
+        },
+        {
+          "seed": 108,
+          "latency_p95": 21.323676282853153,
+          "output_tokens_per_s": 6.17888830629012,
+          "busy_fraction": 0.6099366752799181
+        },
+        {
+          "seed": 109,
+          "latency_p95": 26.191415902009258,
+          "output_tokens_per_s": 6.266034197420077,
+          "busy_fraction": 0.6176502308255803
+        },
+        {
+          "seed": 110,
+          "latency_p95": 29.727471887077566,
+          "output_tokens_per_s": 6.17546560241216,
+          "busy_fraction": 0.6096037355046237
+        },
+        {
+          "seed": 111,
+          "latency_p95": 25.78418135406128,
+          "output_tokens_per_s": 6.388482740984302,
+          "busy_fraction": 0.632455319279183
+        },
+        {
+          "seed": 112,
+          "latency_p95": 24.091525732797475,
+          "output_tokens_per_s": 6.181606834564866,
+          "busy_fraction": 0.6109527811788368
+        },
+        {
+          "seed": 113,
+          "latency_p95": 29.380026349186377,
+          "output_tokens_per_s": 6.546927736036835,
+          "busy_fraction": 0.6473104957611907
+        },
+        {
+          "seed": 114,
+          "latency_p95": 28.27826434704871,
+          "output_tokens_per_s": 6.408966427866702,
+          "busy_fraction": 0.6299023657619728
+        },
+        {
+          "seed": 115,
+          "latency_p95": 26.47033127008812,
+          "output_tokens_per_s": 6.231908405630987,
+          "busy_fraction": 0.615158853003837
+        },
+        {
+          "seed": 116,
+          "latency_p95": 30.789404559513184,
+          "output_tokens_per_s": 7.151939607085541,
+          "busy_fraction": 0.7064646486232967
+        },
+        {
+          "seed": 117,
+          "latency_p95": 27.06095122470614,
+          "output_tokens_per_s": 6.497775268866095,
+          "busy_fraction": 0.64206156935437
+        },
+        {
+          "seed": 118,
+          "latency_p95": 24.630825699417898,
+          "output_tokens_per_s": 6.66395228271759,
+          "busy_fraction": 0.6598648436550518
+        },
+        {
+          "seed": 119,
+          "latency_p95": 28.438169754956785,
+          "output_tokens_per_s": 6.437516256019736,
+          "busy_fraction": 0.635129198734539
+        }
+      ]
+    },
+    {
+      "id": "lan_4",
+      "name": "4 machines, réseau local",
+      "groups": 1,
+      "nodes": 4,
+      "mbps": 1000,
+      "one_way": 0.0005,
+      "rate": 0.1,
+      "faults": false,
+      "requests_simulated": 20000,
+      "nominal_first_s": 1.382663328,
+      "nominal_service_s": 6.561051647999999,
+      "nominal_isolated_tokens_per_s": 9.754533790251305,
+      "offered_load": 0.6562656954597061,
+      "stable_under_assumptions": true,
+      "latency_p50_s": 10.2350056327748,
+      "latency_p95_s": 29.58311752745391,
+      "ttft_p50_s": 5.059840175196438,
+      "ttft_p95_s": 24.407930049429112,
+      "wait_p50_s": 3.674584209397267,
+      "wait_p95_s": 23.004711963444425,
+      "over_30s_fraction": 0.04765,
+      "output_tokens_per_s_mean": 6.381094559411842,
+      "fault_requests": 0,
+      "fault_events": 0,
+      "p95_across_replications_min": 23.456815379724183,
+      "p95_across_replications_max": 35.004329281998515,
+      "replicas": [
+        {
+          "seed": 100,
+          "latency_p95": 28.214463899721125,
+          "output_tokens_per_s": 6.358911797798322,
+          "busy_fraction": 0.6532281930814551
+        },
+        {
+          "seed": 101,
+          "latency_p95": 28.438094073358013,
+          "output_tokens_per_s": 6.226018343138855,
+          "busy_fraction": 0.6368138170340876
+        },
+        {
+          "seed": 102,
+          "latency_p95": 26.2531607400398,
+          "output_tokens_per_s": 5.9507535018700395,
+          "busy_fraction": 0.6116144349156762
+        },
+        {
+          "seed": 103,
+          "latency_p95": 31.1905616618065,
+          "output_tokens_per_s": 6.458342604868146,
+          "busy_fraction": 0.6628304939403459
+        },
+        {
+          "seed": 104,
+          "latency_p95": 28.962400824149793,
+          "output_tokens_per_s": 6.581870260529141,
+          "busy_fraction": 0.6749073851157393
+        },
+        {
+          "seed": 105,
+          "latency_p95": 24.595658339945473,
+          "output_tokens_per_s": 6.309864594277017,
+          "busy_fraction": 0.6483880492890209
+        },
+        {
+          "seed": 106,
+          "latency_p95": 31.344162595968406,
+          "output_tokens_per_s": 6.450795690439741,
+          "busy_fraction": 0.6598542752044303
+        },
+        {
+          "seed": 107,
+          "latency_p95": 28.042848421688255,
+          "output_tokens_per_s": 6.162321170143249,
+          "busy_fraction": 0.6323996098481252
+        },
+        {
+          "seed": 108,
+          "latency_p95": 23.456815379724183,
+          "output_tokens_per_s": 6.178706932207848,
+          "busy_fraction": 0.6334275889599311
+        },
+        {
+          "seed": 109,
+          "latency_p95": 28.41988951208144,
+          "output_tokens_per_s": 6.265892074644299,
+          "busy_fraction": 0.6411397529975907
+        },
+        {
+          "seed": 110,
+          "latency_p95": 32.850821946908624,
+          "output_tokens_per_s": 6.173912512849775,
+          "busy_fraction": 0.6327915223317171
+        },
+        {
+          "seed": 111,
+          "latency_p95": 28.28239657463728,
+          "output_tokens_per_s": 6.388022145579613,
+          "busy_fraction": 0.6565172014871858
+        },
+        {
+          "seed": 112,
+          "latency_p95": 26.482327601902668,
+          "output_tokens_per_s": 6.18140007471665,
+          "busy_fraction": 0.6341773830615153
+        },
+        {
+          "seed": 113,
+          "latency_p95": 31.76681582607511,
+          "output_tokens_per_s": 6.546739685130396,
+          "busy_fraction": 0.6720722348020456
+        },
+        {
+          "seed": 114,
+          "latency_p95": 31.257335362254718,
+          "output_tokens_per_s": 6.408450132151263,
+          "busy_fraction": 0.6539896459037126
+        },
+        {
+          "seed": 115,
+          "latency_p95": 30.24327313851917,
+          "output_tokens_per_s": 6.230007568492624,
+          "busy_fraction": 0.6383693621319565
+        },
+        {
+          "seed": 116,
+          "latency_p95": 35.004329281998515,
+          "output_tokens_per_s": 7.151791233389695,
+          "busy_fraction": 0.7333115690439115
+        },
+        {
+          "seed": 117,
+          "latency_p95": 30.16179468648045,
+          "output_tokens_per_s": 6.497431571437667,
+          "busy_fraction": 0.6664566682450537
+        },
+        {
+          "seed": 118,
+          "latency_p95": 27.189870221844732,
+          "output_tokens_per_s": 6.663450214011617,
+          "busy_fraction": 0.6849750612947995
+        },
+        {
+          "seed": 119,
+          "latency_p95": 31.665437425940944,
+          "output_tokens_per_s": 6.43720908056088,
+          "busy_fraction": 0.6592789782424063
+        }
+      ]
+    },
+    {
+      "id": "wan_4",
+      "name": "4 machines, Internet",
+      "groups": 1,
+      "nodes": 4,
+      "mbps": 100,
+      "one_way": 0.02,
+      "rate": 0.1,
+      "faults": false,
+      "requests_simulated": 20000,
+      "nominal_first_s": 2.3666332800000003,
+      "nominal_service_s": 12.57051648,
+      "nominal_isolated_tokens_per_s": 5.091278477047905,
+      "offered_load": 1.2587864273289722,
+      "stable_under_assumptions": false,
+      "latency_p50_s": 1282.6453148957958,
+      "latency_p95_s": 2586.551879759078,
+      "ttft_p50_s": 1272.7695421657654,
+      "ttft_p95_s": 2577.243663408076,
+      "wait_p50_s": 1270.4343773267929,
+      "wait_p95_s": 2574.935530400859,
+      "over_30s_fraction": 0.9895,
+      "output_tokens_per_s_mean": 5.07629494068214,
+      "fault_requests": 0,
+      "fault_events": 0,
+      "p95_across_replications_min": 1803.2884343897308,
+      "p95_across_replications_max": 3508.163565686116,
+      "replicas": [
+        {
+          "seed": 100,
+          "latency_p95": 2468.8571604882673,
+          "output_tokens_per_s": 5.076834415229661,
+          "busy_fraction": 0.9999999999999999
+        },
+        {
+          "seed": 101,
+          "latency_p95": 2219.1775752706126,
+          "output_tokens_per_s": 5.086488678345792,
+          "busy_fraction": 0.9981029340031534
+        },
+        {
+          "seed": 102,
+          "latency_p95": 1803.2884343897308,
+          "output_tokens_per_s": 5.0869658970027025,
+          "busy_fraction": 1.0000000000000002
+        },
+        {
+          "seed": 103,
+          "latency_p95": 2639.885744591189,
+          "output_tokens_per_s": 5.077073231126469,
+          "busy_fraction": 1.0000000000000002
+        },
+        {
+          "seed": 104,
+          "latency_p95": 2741.6885310821003,
+          "output_tokens_per_s": 5.071289968621041,
+          "busy_fraction": 0.9993503186485135
+        },
+        {
+          "seed": 105,
+          "latency_p95": 2450.9718372427283,
+          "output_tokens_per_s": 5.019976310444212,
+          "busy_fraction": 0.991279102642042
+        },
+        {
+          "seed": 106,
+          "latency_p95": 2594.54813230686,
+          "output_tokens_per_s": 5.0632952474515305,
+          "busy_fraction": 0.9980302398834157
+        },
+        {
+          "seed": 107,
+          "latency_p95": 2174.483728606117,
+          "output_tokens_per_s": 5.050391659962322,
+          "busy_fraction": 0.9960700875239692
+        },
+        {
+          "seed": 108,
+          "latency_p95": 2215.6790132466117,
+          "output_tokens_per_s": 5.043800644886339,
+          "busy_fraction": 0.9982313361468745
+        },
+        {
+          "seed": 109,
+          "latency_p95": 2245.3026514839908,
+          "output_tokens_per_s": 5.11197050630157,
+          "busy_fraction": 1.0
+        },
+        {
+          "seed": 110,
+          "latency_p95": 2139.560907791502,
+          "output_tokens_per_s": 5.077562839960249,
+          "busy_fraction": 1.0
+        },
+        {
+          "seed": 111,
+          "latency_p95": 2678.4932186204474,
+          "output_tokens_per_s": 5.0746434733214025,
+          "busy_fraction": 0.9995048846475055
+        },
+        {
+          "seed": 112,
+          "latency_p95": 2169.382119601179,
+          "output_tokens_per_s": 5.091305829577415,
+          "busy_fraction": 0.999220960363347
+        },
+        {
+          "seed": 113,
+          "latency_p95": 2759.908802786793,
+          "output_tokens_per_s": 5.067619226334661,
+          "busy_fraction": 0.999765671742655
+        },
+        {
+          "seed": 114,
+          "latency_p95": 2409.623550824237,
+          "output_tokens_per_s": 5.082003861944172,
+          "busy_fraction": 0.9958456496369563
+        },
+        {
+          "seed": 115,
+          "latency_p95": 2178.7837927566698,
+          "output_tokens_per_s": 5.084814035370245,
+          "busy_fraction": 0.9963533230983787
+        },
+        {
+          "seed": 116,
+          "latency_p95": 3508.163565686116,
+          "output_tokens_per_s": 5.101431623630096,
+          "busy_fraction": 0.9999999999999999
+        },
+        {
+          "seed": 117,
+          "latency_p95": 2581.024677994874,
+          "output_tokens_per_s": 5.09653682832234,
+          "busy_fraction": 0.9999999999999999
+        },
+        {
+          "seed": 118,
+          "latency_p95": 2992.436132488667,
+          "output_tokens_per_s": 5.074608243942672,
+          "busy_fraction": 1.0
+        },
+        {
+          "seed": 119,
+          "latency_p95": 2521.2703917638946,
+          "output_tokens_per_s": 5.087286291867902,
+          "busy_fraction": 0.9966991949706417
+        }
+      ]
+    },
+    {
+      "id": "wan_8",
+      "name": "8 machines, Internet",
+      "groups": 1,
+      "nodes": 8,
+      "mbps": 100,
+      "one_way": 0.02,
+      "rate": 0.1,
+      "faults": false,
+      "requests_simulated": 20000,
+      "nominal_first_s": 3.78881056,
+      "nominal_service_s": 19.19784448,
+      "nominal_isolated_tokens_per_s": 3.333707597572954,
+      "offered_load": 1.9231338413487322,
+      "stable_under_assumptions": false,
+      "latency_p50_s": 4585.938948630464,
+      "latency_p95_s": 8772.977993052542,
+      "ttft_p50_s": 4568.078619216916,
+      "ttft_p95_s": 8758.83241576391,
+      "wait_p50_s": 4564.246390916083,
+      "wait_p95_s": 8755.024621709526,
+      "over_30s_fraction": 0.998,
+      "output_tokens_per_s_mean": 3.3277941828815094,
+      "fault_requests": 0,
+      "fault_events": 0,
+      "p95_across_replications_min": 8113.2147847012975,
+      "p95_across_replications_max": 9771.239313041404,
+      "replicas": [
+        {
+          "seed": 100,
+          "latency_p95": 8772.912786201121,
+          "output_tokens_per_s": 3.323551917951059,
+          "busy_fraction": 1.0000000000000002
+        },
+        {
+          "seed": 101,
+          "latency_p95": 8500.192333315683,
+          "output_tokens_per_s": 3.3343922915854245,
+          "busy_fraction": 0.9997349718388058
+        },
+        {
+          "seed": 102,
+          "latency_p95": 8113.2147847012975,
+          "output_tokens_per_s": 3.33295578551966,
+          "busy_fraction": 1.0
+        },
+        {
+          "seed": 103,
+          "latency_p95": 8984.584199713105,
+          "output_tokens_per_s": 3.322686114189867,
+          "busy_fraction": 1.0000000000000002
+        },
+        {
+          "seed": 104,
+          "latency_p95": 9080.983866104349,
+          "output_tokens_per_s": 3.3191602560159272,
+          "busy_fraction": 0.9998985345133674
+        },
+        {
+          "seed": 105,
+          "latency_p95": 8656.489965814364,
+          "output_tokens_per_s": 3.3128944393276147,
+          "busy_fraction": 1.0000000000000002
+        },
+        {
+          "seed": 106,
+          "latency_p95": 8905.937659928912,
+          "output_tokens_per_s": 3.31536514015038,
+          "busy_fraction": 0.9999440394017872
+        },
+        {
+          "seed": 107,
+          "latency_p95": 8479.848035243822,
+          "output_tokens_per_s": 3.3150294062292898,
+          "busy_fraction": 0.9994853121476034
+        },
+        {
+          "seed": 108,
+          "latency_p95": 8624.921875395261,
+          "output_tokens_per_s": 3.300333039724019,
+          "busy_fraction": 1.0
+        },
+        {
+          "seed": 109,
+          "latency_p95": 8520.927229750427,
+          "output_tokens_per_s": 3.3494656040339006,
+          "busy_fraction": 1.0
+        },
+        {
+          "seed": 110,
+          "latency_p95": 8459.083506840678,
+          "output_tokens_per_s": 3.32155698810109,
+          "busy_fraction": 1.0000000000000002
+        },
+        {
+          "seed": 111,
+          "latency_p95": 9072.739525182053,
+          "output_tokens_per_s": 3.3243619419939514,
+          "busy_fraction": 1.0
+        },
+        {
+          "seed": 112,
+          "latency_p95": 8419.09689220339,
+          "output_tokens_per_s": 3.338071100069001,
+          "busy_fraction": 1.0000000000000002
+        },
+        {
+          "seed": 113,
+          "latency_p95": 9097.74626008555,
+          "output_tokens_per_s": 3.3158099730319575,
+          "busy_fraction": 1.0
+        },
+        {
+          "seed": 114,
+          "latency_p95": 8656.567426861238,
+          "output_tokens_per_s": 3.338744822579844,
+          "busy_fraction": 0.9999999999999998
+        },
+        {
+          "seed": 115,
+          "latency_p95": 8388.344937812326,
+          "output_tokens_per_s": 3.3436961096901014,
+          "busy_fraction": 1.0
+        },
+        {
+          "seed": 116,
+          "latency_p95": 9771.239313041404,
+          "output_tokens_per_s": 3.342748264177874,
+          "busy_fraction": 1.0000000000000002
+        },
+        {
+          "seed": 117,
+          "latency_p95": 8856.498934637844,
+          "output_tokens_per_s": 3.3389149315398687,
+          "busy_fraction": 1.0
+        },
+        {
+          "seed": 118,
+          "latency_p95": 9355.077968163918,
+          "output_tokens_per_s": 3.3224056090655685,
+          "busy_fraction": 1.0
+        },
+        {
+          "seed": 119,
+          "latency_p95": 8779.95384259529,
+          "output_tokens_per_s": 3.343739922653789,
+          "busy_fraction": 0.9999999999999998
+        }
+      ]
+    },
+    {
+      "id": "wan_4_light",
+      "name": "4 machines Internet, demande réduite",
+      "groups": 1,
+      "nodes": 4,
+      "mbps": 100,
+      "one_way": 0.02,
+      "rate": 0.04,
+      "faults": false,
+      "requests_simulated": 20000,
+      "nominal_first_s": 2.3666332800000003,
+      "nominal_service_s": 12.57051648,
+      "nominal_isolated_tokens_per_s": 5.091278477047905,
+      "offered_load": 0.5035145709315889,
+      "stable_under_assumptions": true,
+      "latency_p50_s": 14.75495521129551,
+      "latency_p95_s": 39.8065312837798,
+      "ttft_p50_s": 2.5222529666509077,
+      "ttft_p95_s": 29.473329282636097,
+      "wait_p50_s": 0.0,
+      "wait_p95_s": 27.10631808281173,
+      "over_30s_fraction": 0.12545,
+      "output_tokens_per_s_mean": 2.5535831879237967,
+      "fault_requests": 0,
+      "fault_events": 0,
+      "p95_across_replications_min": 33.32943928178128,
+      "p95_across_replications_max": 45.46562135589669,
+      "replicas": [
+        {
+          "seed": 100,
+          "latency_p95": 38.32877677876249,
+          "output_tokens_per_s": 2.5444971766184548,
+          "busy_fraction": 0.5011975905665517
+        },
+        {
+          "seed": 101,
+          "latency_p95": 39.27984506419339,
+          "output_tokens_per_s": 2.490556612984616,
+          "busy_fraction": 0.4887127486007369
+        },
+        {
+          "seed": 102,
+          "latency_p95": 36.79794686504607,
+          "output_tokens_per_s": 2.3807376279003902,
+          "busy_fraction": 0.46800738910067163
+        },
+        {
+          "seed": 103,
+          "latency_p95": 40.848018533553116,
+          "output_tokens_per_s": 2.5844009698086916,
+          "busy_fraction": 0.5090336207806248
+        },
+        {
+          "seed": 104,
+          "latency_p95": 43.085297783562,
+          "output_tokens_per_s": 2.6336471064652343,
+          "busy_fraction": 0.5189874945702286
+        },
+        {
+          "seed": 105,
+          "latency_p95": 37.1469309764634,
+          "output_tokens_per_s": 2.525574356639797,
+          "busy_fraction": 0.4987173100193602
+        },
+        {
+          "seed": 106,
+          "latency_p95": 37.98022315578673,
+          "output_tokens_per_s": 2.5822041897693335,
+          "busy_fraction": 0.508980365749078
+        },
+        {
+          "seed": 107,
+          "latency_p95": 38.81864796461195,
+          "output_tokens_per_s": 2.4668125876683695,
+          "busy_fraction": 0.48652033258790717
+        },
+        {
+          "seed": 108,
+          "latency_p95": 33.32943928178128,
+          "output_tokens_per_s": 2.4715793515729034,
+          "busy_fraction": 0.4891565175191898
+        },
+        {
+          "seed": 109,
+          "latency_p95": 41.155103477842204,
+          "output_tokens_per_s": 2.5068464879501673,
+          "busy_fraction": 0.4903875100335489
+        },
+        {
+          "seed": 110,
+          "latency_p95": 45.46562135589669,
+          "output_tokens_per_s": 2.4714941386522007,
+          "busy_fraction": 0.4867481145091154
+        },
+        {
+          "seed": 111,
+          "latency_p95": 41.0168229459799,
+          "output_tokens_per_s": 2.5562643004820216,
+          "busy_fraction": 0.5034833812885673
+        },
+        {
+          "seed": 112,
+          "latency_p95": 37.30710217877154,
+          "output_tokens_per_s": 2.4725741937975103,
+          "busy_fraction": 0.48526803205240643
+        },
+        {
+          "seed": 113,
+          "latency_p95": 41.708115479067565,
+          "output_tokens_per_s": 2.619037028534328,
+          "busy_fraction": 0.5166969334523933
+        },
+        {
+          "seed": 114,
+          "latency_p95": 41.62504062285296,
+          "output_tokens_per_s": 2.5655633820121606,
+          "busy_fraction": 0.5027357716070845
+        },
+        {
+          "seed": 115,
+          "latency_p95": 37.09900330806803,
+          "output_tokens_per_s": 2.4966562594912816,
+          "busy_fraction": 0.4892119443257826
+        },
+        {
+          "seed": 116,
+          "latency_p95": 41.48635316702493,
+          "output_tokens_per_s": 2.861363251309556,
+          "busy_fraction": 0.5608941690123951
+        },
+        {
+          "seed": 117,
+          "latency_p95": 39.57983371212105,
+          "output_tokens_per_s": 2.599499529475148,
+          "busy_fraction": 0.5100521426685818
+        },
+        {
+          "seed": 118,
+          "latency_p95": 38.63963782562922,
+          "output_tokens_per_s": 2.666718765642773,
+          "busy_fraction": 0.5255023910123335
+        },
+        {
+          "seed": 119,
+          "latency_p95": 41.83437455003095,
+          "output_tokens_per_s": 2.575636441700997,
+          "busy_fraction": 0.5046177118209432
+        }
+      ]
+    },
+    {
+      "id": "wan_8_light",
+      "name": "8 machines Internet, demande réduite",
+      "groups": 1,
+      "nodes": 8,
+      "mbps": 100,
+      "one_way": 0.02,
+      "rate": 0.04,
+      "faults": false,
+      "requests_simulated": 20000,
+      "nominal_first_s": 3.78881056,
+      "nominal_service_s": 19.19784448,
+      "nominal_isolated_tokens_per_s": 3.333707597572954,
+      "offered_load": 0.7692535365394929,
+      "stable_under_assumptions": true,
+      "latency_p50_s": 39.42576479547097,
+      "latency_p95_s": 132.4800809947955,
+      "ttft_p50_s": 23.75141907073869,
+      "ttft_p95_s": 117.69121325760743,
+      "wait_p50_s": 19.978835062038343,
+      "wait_p95_s": 113.88662074714935,
+      "over_30s_fraction": 0.63995,
+      "output_tokens_per_s_mean": 2.551161209870928,
+      "fault_requests": 0,
+      "fault_events": 0,
+      "p95_across_replications_min": 96.31290363200854,
+      "p95_across_replications_max": 298.8319107581347,
+      "replicas": [
+        {
+          "seed": 100,
+          "latency_p95": 112.80222788689278,
+          "output_tokens_per_s": 2.5431978280132848,
+          "busy_fraction": 0.7652047841578912
+        },
+        {
+          "seed": 101,
+          "latency_p95": 117.50890599870068,
+          "output_tokens_per_s": 2.4897688003299696,
+          "busy_fraction": 0.7464955301643609
+        },
+        {
+          "seed": 102,
+          "latency_p95": 101.98963994129691,
+          "output_tokens_per_s": 2.3802447226101346,
+          "busy_fraction": 0.7141543050019841
+        },
+        {
+          "seed": 103,
+          "latency_p95": 139.96462350315176,
+          "output_tokens_per_s": 2.58315822059525,
+          "busy_fraction": 0.7774307087159429
+        },
+        {
+          "seed": 104,
+          "latency_p95": 146.50384579725693,
+          "output_tokens_per_s": 2.6323089676620914,
+          "busy_fraction": 0.7929842719649299
+        },
+        {
+          "seed": 105,
+          "latency_p95": 103.81650655926268,
+          "output_tokens_per_s": 2.521725718837922,
+          "busy_fraction": 0.7611850498169608
+        },
+        {
+          "seed": 106,
+          "latency_p95": 152.89472486161148,
+          "output_tokens_per_s": 2.5785422084227885,
+          "busy_fraction": 0.7777115951521815
+        },
+        {
+          "seed": 107,
+          "latency_p95": 115.01302746507761,
+          "output_tokens_per_s": 2.460491085965155,
+          "busy_fraction": 0.7418409913562565
+        },
+        {
+          "seed": 108,
+          "latency_p95": 96.31290363200854,
+          "output_tokens_per_s": 2.4707065613530554,
+          "busy_fraction": 0.7486234060668197
+        },
+        {
+          "seed": 109,
+          "latency_p95": 119.45174442555695,
+          "output_tokens_per_s": 2.5062327404205273,
+          "busy_fraction": 0.7482485377375325
+        },
+        {
+          "seed": 110,
+          "latency_p95": 124.88433665164236,
+          "output_tokens_per_s": 2.4658882779292446,
+          "busy_fraction": 0.7423892730917663
+        },
+        {
+          "seed": 111,
+          "latency_p95": 107.10326811094669,
+          "output_tokens_per_s": 2.5542392988442346,
+          "busy_fraction": 0.7683397125260683
+        },
+        {
+          "seed": 112,
+          "latency_p95": 98.96783816366933,
+          "output_tokens_per_s": 2.471539377069621,
+          "busy_fraction": 0.7404094469463315
+        },
+        {
+          "seed": 113,
+          "latency_p95": 154.4973040618488,
+          "output_tokens_per_s": 2.6171737421156847,
+          "busy_fraction": 0.7893014869373096
+        },
+        {
+          "seed": 114,
+          "latency_p95": 140.23726427648023,
+          "output_tokens_per_s": 2.563495602383657,
+          "busy_fraction": 0.7678021947190461
+        },
+        {
+          "seed": 115,
+          "latency_p95": 122.49286626738301,
+          "output_tokens_per_s": 2.488294325174466,
+          "busy_fraction": 0.7441747824999217
+        },
+        {
+          "seed": 116,
+          "latency_p95": 298.8319107581347,
+          "output_tokens_per_s": 2.8599351857019837,
+          "busy_fraction": 0.8555640328498879
+        },
+        {
+          "seed": 117,
+          "latency_p95": 130.58251152200197,
+          "output_tokens_per_s": 2.597338745101559,
+          "busy_fraction": 0.7778990475518633
+        },
+        {
+          "seed": 118,
+          "latency_p95": 143.64734603808643,
+          "output_tokens_per_s": 2.664509323764992,
+          "busy_fraction": 0.8019819484094808
+        },
+        {
+          "seed": 119,
+          "latency_p95": 122.95706017597274,
+          "output_tokens_per_s": 2.574433465122941,
+          "busy_fraction": 0.7699263473457344
+        }
+      ]
+    },
+    {
+      "id": "lan_pool",
+      "name": "8 groupes de 4, réseau local",
+      "groups": 8,
+      "nodes": 4,
+      "mbps": 1000,
+      "one_way": 0.0005,
+      "rate": 0.8,
+      "faults": false,
+      "requests_simulated": 20000,
+      "nominal_first_s": 1.382663328,
+      "nominal_service_s": 6.561051647999999,
+      "nominal_isolated_tokens_per_s": 9.754533790251305,
+      "offered_load": 0.6562656954597061,
+      "stable_under_assumptions": true,
+      "latency_p50_s": 6.680783826206934,
+      "latency_p95_s": 8.618520297100867,
+      "ttft_p50_s": 1.4116717841657578,
+      "ttft_p95_s": 3.40934137816918,
+      "wait_p50_s": 0.0,
+      "wait_p95_s": 2.0191366737749705,
+      "over_30s_fraction": 0.0,
+      "output_tokens_per_s_mean": 50.83588294352317,
+      "fault_requests": 0,
+      "fault_events": 0,
+      "p95_across_replications_min": 7.830206673019585,
+      "p95_across_replications_max": 9.423944652690388,
+      "replicas": [
+        {
+          "seed": 100,
+          "latency_p95": 8.454442594439135,
+          "output_tokens_per_s": 50.65924503304562,
+          "busy_fraction": 0.650505309478909
+        },
+        {
+          "seed": 101,
+          "latency_p95": 8.567110237304933,
+          "output_tokens_per_s": 49.605110924901936,
+          "busy_fraction": 0.6342179361569382
+        },
+        {
+          "seed": 102,
+          "latency_p95": 8.239602765959258,
+          "output_tokens_per_s": 47.402357888687696,
+          "busy_fraction": 0.6089978001241687
+        },
+        {
+          "seed": 103,
+          "latency_p95": 8.766607842430378,
+          "output_tokens_per_s": 51.44005470543897,
+          "busy_fraction": 0.6599223468538146
+        },
+        {
+          "seed": 104,
+          "latency_p95": 8.596372668311755,
+          "output_tokens_per_s": 52.436585190876976,
+          "busy_fraction": 0.6721083292959112
+        },
+        {
+          "seed": 105,
+          "latency_p95": 8.052624922714989,
+          "output_tokens_per_s": 50.296141947703646,
+          "busy_fraction": 0.6460403562743146
+        },
+        {
+          "seed": 106,
+          "latency_p95": 8.900471784840608,
+          "output_tokens_per_s": 51.45951992210277,
+          "busy_fraction": 0.6579766638495947
+        },
+        {
+          "seed": 107,
+          "latency_p95": 8.052900613697448,
+          "output_tokens_per_s": 49.09131500243268,
+          "busy_fraction": 0.6297409611837093
+        },
+        {
+          "seed": 108,
+          "latency_p95": 7.830206673019585,
+          "output_tokens_per_s": 49.2194743065432,
+          "busy_fraction": 0.6307341746812795
+        },
+        {
+          "seed": 109,
+          "latency_p95": 8.226403974272337,
+          "output_tokens_per_s": 49.88483115212407,
+          "busy_fraction": 0.6380406002487475
+        },
+        {
+          "seed": 110,
+          "latency_p95": 8.846783374651338,
+          "output_tokens_per_s": 49.19784233472663,
+          "busy_fraction": 0.6303129798493342
+        },
+        {
+          "seed": 111,
+          "latency_p95": 8.379679515819436,
+          "output_tokens_per_s": 50.91996138992531,
+          "busy_fraction": 0.6541506469001934
+        },
+        {
+          "seed": 112,
+          "latency_p95": 8.357957312603633,
+          "output_tokens_per_s": 49.223510873404095,
+          "busy_fraction": 0.6312574201125944
+        },
+        {
+          "seed": 113,
+          "latency_p95": 9.262188290817859,
+          "output_tokens_per_s": 52.10669528937263,
+          "busy_fraction": 0.6686431879752598
+        },
+        {
+          "seed": 114,
+          "latency_p95": 8.812532013178252,
+          "output_tokens_per_s": 51.06595610149832,
+          "busy_fraction": 0.6514173836861562
+        },
+        {
+          "seed": 115,
+          "latency_p95": 8.600088069039412,
+          "output_tokens_per_s": 49.67581733958592,
+          "busy_fraction": 0.6362656762415415
+        },
+        {
+          "seed": 116,
+          "latency_p95": 9.423944652690388,
+          "output_tokens_per_s": 56.94984610465009,
+          "busy_fraction": 0.7299217014479419
+        },
+        {
+          "seed": 117,
+          "latency_p95": 8.806733439604319,
+          "output_tokens_per_s": 51.75887548402199,
+          "busy_fraction": 0.6636285301339324
+        },
+        {
+          "seed": 118,
+          "latency_p95": 8.689992389326155,
+          "output_tokens_per_s": 53.07116940004755,
+          "busy_fraction": 0.6819370285896323
+        },
+        {
+          "seed": 119,
+          "latency_p95": 8.781960157830452,
+          "output_tokens_per_s": 51.2533484793732,
+          "busy_fraction": 0.6561511128911277
+        }
+      ]
+    },
+    {
+      "id": "lan_pool_faults",
+      "name": "Même coopérative, incidents injectés",
+      "groups": 8,
+      "nodes": 4,
+      "mbps": 1000,
+      "one_way": 0.0005,
+      "rate": 0.8,
+      "faults": true,
+      "requests_simulated": 20000,
+      "nominal_first_s": 1.382663328,
+      "nominal_service_s": 6.561051647999999,
+      "nominal_isolated_tokens_per_s": 9.754533790251305,
+      "offered_load": 0.6649369528247868,
+      "stable_under_assumptions": true,
+      "latency_p50_s": 6.6998393186957514,
+      "latency_p95_s": 9.148064780841159,
+      "ttft_p50_s": 1.4142655273075961,
+      "ttft_p95_s": 3.6269240707939496,
+      "wait_p50_s": 0.0,
+      "wait_p95_s": 2.170886160818282,
+      "over_30s_fraction": 0.0,
+      "output_tokens_per_s_mean": 50.81955361298246,
+      "fault_requests": 264,
+      "fault_events": 268,
+      "p95_across_replications_min": 7.980303409147961,
+      "p95_across_replications_max": 10.35823337472748,
+      "replicas": [
+        {
+          "seed": 100,
+          "latency_p95": 8.878907440902804,
+          "output_tokens_per_s": 50.65924503304562,
+          "busy_fraction": 0.6588328234250287
+        },
+        {
+          "seed": 101,
+          "latency_p95": 9.002550301929686,
+          "output_tokens_per_s": 49.605110924901936,
+          "busy_fraction": 0.6423537556885504
+        },
+        {
+          "seed": 102,
+          "latency_p95": 8.862914214387983,
+          "output_tokens_per_s": 47.402357888687696,
+          "busy_fraction": 0.618018481934929
+        },
+        {
+          "seed": 103,
+          "latency_p95": 9.636867688266959,
+          "output_tokens_per_s": 51.44005470543897,
+          "busy_fraction": 0.6689951448095388
+        },
+        {
+          "seed": 104,
+          "latency_p95": 8.755805361016906,
+          "output_tokens_per_s": 52.436585190876976,
+          "busy_fraction": 0.6761099563269908
+        },
+        {
+          "seed": 105,
+          "latency_p95": 8.302956103415578,
+          "output_tokens_per_s": 50.296141947703646,
+          "busy_fraction": 0.6549708284293764
+        },
+        {
+          "seed": 106,
+          "latency_p95": 9.787337320680273,
+          "output_tokens_per_s": 51.45951992210277,
+          "busy_fraction": 0.667693677898845
+        },
+        {
+          "seed": 107,
+          "latency_p95": 8.46338500791141,
+          "output_tokens_per_s": 48.83616229670842,
+          "busy_fraction": 0.6332636774158374
+        },
+        {
+          "seed": 108,
+          "latency_p95": 7.980303409147961,
+          "output_tokens_per_s": 49.2194743065432,
+          "busy_fraction": 0.6356928194602881
+        },
+        {
+          "seed": 109,
+          "latency_p95": 8.982744760451629,
+          "output_tokens_per_s": 49.88483115212407,
+          "busy_fraction": 0.6481267820430248
+        },
+        {
+          "seed": 110,
+          "latency_p95": 9.386408067738863,
+          "output_tokens_per_s": 49.18220116194452,
+          "busy_fraction": 0.6388072589251889
+        },
+        {
+          "seed": 111,
+          "latency_p95": 8.645748460768383,
+          "output_tokens_per_s": 50.91996138992531,
+          "busy_fraction": 0.662515597146545
+        },
+        {
+          "seed": 112,
+          "latency_p95": 9.110412784735777,
+          "output_tokens_per_s": 49.223510873404095,
+          "busy_fraction": 0.6418751878862601
+        },
+        {
+          "seed": 113,
+          "latency_p95": 10.35823337472748,
+          "output_tokens_per_s": 52.070482442316255,
+          "busy_fraction": 0.6806411943600748
+        },
+        {
+          "seed": 114,
+          "latency_p95": 9.225091445722649,
+          "output_tokens_per_s": 51.06595610149832,
+          "busy_fraction": 0.6616934399377123
+        },
+        {
+          "seed": 115,
+          "latency_p95": 8.883557558231631,
+          "output_tokens_per_s": 49.656237454334615,
+          "busy_fraction": 0.6422800639387275
+        },
+        {
+          "seed": 116,
+          "latency_p95": 9.91376703267204,
+          "output_tokens_per_s": 56.94984610465009,
+          "busy_fraction": 0.7415377029924028
+        },
+        {
+          "seed": 117,
+          "latency_p95": 8.983162401691182,
+          "output_tokens_per_s": 51.75887548402199,
+          "busy_fraction": 0.6701587535068091
+        },
+        {
+          "seed": 118,
+          "latency_p95": 9.432938784661873,
+          "output_tokens_per_s": 53.07116940004755,
+          "busy_fraction": 0.6926670223330558
+        },
+        {
+          "seed": 119,
+          "latency_p95": 9.18785360750944,
+          "output_tokens_per_s": 51.2533484793732,
+          "busy_fraction": 0.6639170831838961
+        }
+      ]
+    }
+  ]
+}

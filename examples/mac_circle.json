@@ -1,0 +1,54 @@
+{
+  "trust_group": "demo-private",
+  "model": {
+    "id": "uniform-8b-q4-planning-only",
+    "backend": "demo-mlx",
+    "uniform_layer_estimate": true,
+    "layers": 32,
+    "weights_with_metadata_gb": 4.4,
+    "kv_total_gb": 1.073741824,
+    "runtime_and_buffers_per_node_gb": 0.6
+  },
+  "nodes": [
+    {
+      "id": "demo-mac-1",
+      "installed_gb": 16,
+      "available_gb": 8,
+      "reserve_gb": 2,
+      "percent": 20,
+      "authorized": true,
+      "trust_group": "demo-private",
+      "backend": "demo-mlx"
+    },
+    {
+      "id": "demo-mac-2",
+      "installed_gb": 16,
+      "available_gb": 8,
+      "reserve_gb": 2,
+      "percent": 20,
+      "authorized": true,
+      "trust_group": "demo-private",
+      "backend": "demo-mlx"
+    },
+    {
+      "id": "demo-mac-3",
+      "installed_gb": 16,
+      "available_gb": 8,
+      "reserve_gb": 2,
+      "percent": 20,
+      "authorized": true,
+      "trust_group": "demo-private",
+      "backend": "demo-mlx"
+    },
+    {
+      "id": "demo-mac-4",
+      "installed_gb": 16,
+      "available_gb": 8,
+      "reserve_gb": 2,
+      "percent": 20,
+      "authorized": true,
+      "trust_group": "demo-private",
+      "backend": "demo-mlx"
+    }
+  ]
+}

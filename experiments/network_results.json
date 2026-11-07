@@ -1,0 +1,81 @@
+{
+  "note": "Analytical scenarios, not measurements; serial batch=1, fixed total compute, no overlap/speculation",
+  "rows": [
+    {
+      "nodes": 1,
+      "network": "LAN",
+      "serial_compute_ms": 80,
+      "modeled_tokens_per_second": 12.5,
+      "modeled_ms_per_token": 80.0
+    },
+    {
+      "nodes": 1,
+      "network": "WAN",
+      "serial_compute_ms": 80,
+      "modeled_tokens_per_second": 12.5,
+      "modeled_ms_per_token": 80.0
+    },
+    {
+      "nodes": 2,
+      "network": "LAN",
+      "serial_compute_ms": 80,
+      "modeled_tokens_per_second": 12.335693496898708,
+      "modeled_ms_per_token": 81.065568
+    },
+    {
+      "nodes": 2,
+      "network": "WAN",
+      "serial_compute_ms": 80,
+      "modeled_tokens_per_second": 8.288047442109646,
+      "modeled_ms_per_token": 120.65568
+    },
+    {
+      "nodes": 4,
+      "network": "LAN",
+      "serial_compute_ms": 80,
+      "modeled_tokens_per_second": 12.165947415855442,
+      "modeled_ms_per_token": 82.19664
+    },
+    {
+      "nodes": 4,
+      "network": "WAN",
+      "serial_compute_ms": 80,
+      "modeled_tokens_per_second": 6.17412006440842,
+      "modeled_ms_per_token": 161.96640000000002
+    },
+    {
+      "nodes": 8,
+      "network": "LAN",
+      "serial_compute_ms": 80,
+      "modeled_tokens_per_second": 11.84009469044688,
+      "modeled_ms_per_token": 84.45878400000001
+    },
+    {
+      "nodes": 8,
+      "network": "WAN",
+      "serial_compute_ms": 80,
+      "modeled_tokens_per_second": 4.088510696198143,
+      "modeled_ms_per_token": 244.58784
+    },
+    {
+      "nodes": 16,
+      "network": "LAN",
+      "serial_compute_ms": 80,
+      "modeled_tokens_per_second": 11.238092566640091,
+      "modeled_ms_per_token": 88.98307199999999
+    },
+    {
+      "nodes": 16,
+      "network": "WAN",
+      "serial_compute_ms": 80,
+      "modeled_tokens_per_second": 2.44003182582311,
+      "modeled_ms_per_token": 409.83072000000004
+    }
+  ],
+  "model_4GB_transfer_at_100Mbps_s": 320.0,
+  "prefill_4096_tokens_4096_hidden_fp16_MiB": 32.0,
+  "availability_8_nodes": 0.6634204312890623,
+  "availability_8_redundant_pairs": 0.9801741277289135,
+  "heat_kWh": 0.6,
+  "heat_reused_kWh": 0.48
+}

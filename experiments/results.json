@@ -1,0 +1,179 @@
+{
+  "description": "Synthetic argmax only; numerical simulation, no LLM or physical memory benchmark",
+  "matrix": [
+    512,
+    256
+  ],
+  "queries_per_case_and_bits": 800,
+  "seeds": [
+    17,
+    29,
+    43,
+    71
+  ],
+  "dtype_reference": "FP32 weights, FP64 arithmetic",
+  "numpy": "2.3.5",
+  "python": "3.12.14",
+  "results": [
+    {
+      "case": "independent",
+      "bits": 2,
+      "n": 800,
+      "refined_fraction": 1.0,
+      "refined_p95": 1.0,
+      "read_ratio": 1.078125,
+      "mismatches": 0,
+      "coarse_mismatch_rate": 0.84625
+    },
+    {
+      "case": "independent",
+      "bits": 3,
+      "n": 800,
+      "refined_fraction": 0.90749755859375,
+      "refined_p95": 0.9688476562499999,
+      "read_ratio": 1.01687255859375,
+      "mismatches": 0,
+      "coarse_mismatch_rate": 0.4325
+    },
+    {
+      "case": "independent",
+      "bits": 4,
+      "n": 800,
+      "refined_fraction": 0.17242919921875,
+      "refined_p95": 0.2969726562499999,
+      "read_ratio": 0.31305419921875,
+      "mismatches": 0,
+      "coarse_mismatch_rate": 0.22625
+    },
+    {
+      "case": "independent",
+      "bits": 8,
+      "n": 800,
+      "refined_fraction": 0.00276123046875,
+      "refined_p95": 0.005859375,
+      "read_ratio": 0.26838623046875,
+      "mismatches": 0,
+      "coarse_mismatch_rate": 0.0125
+    },
+    {
+      "case": "aligned",
+      "bits": 2,
+      "n": 800,
+      "refined_fraction": 0.1131396484375,
+      "refined_p95": 0.3087890624999998,
+      "read_ratio": 0.1912646484375,
+      "mismatches": 0,
+      "coarse_mismatch_rate": 0.0
+    },
+    {
+      "case": "aligned",
+      "bits": 3,
+      "n": 800,
+      "refined_fraction": 0.001953125,
+      "refined_p95": 0.001953125,
+      "read_ratio": 0.111328125,
+      "mismatches": 0,
+      "coarse_mismatch_rate": 0.0
+    },
+    {
+      "case": "aligned",
+      "bits": 4,
+      "n": 800,
+      "refined_fraction": 0.001953125,
+      "refined_p95": 0.001953125,
+      "read_ratio": 0.142578125,
+      "mismatches": 0,
+      "coarse_mismatch_rate": 0.0
+    },
+    {
+      "case": "aligned",
+      "bits": 8,
+      "n": 800,
+      "refined_fraction": 0.001953125,
+      "refined_p95": 0.001953125,
+      "read_ratio": 0.267578125,
+      "mismatches": 0,
+      "coarse_mismatch_rate": 0.0
+    },
+    {
+      "case": "correlated",
+      "bits": 2,
+      "n": 800,
+      "refined_fraction": 1.0,
+      "refined_p95": 1.0,
+      "read_ratio": 1.078125,
+      "mismatches": 0,
+      "coarse_mismatch_rate": 0.9975
+    },
+    {
+      "case": "correlated",
+      "bits": 3,
+      "n": 800,
+      "refined_fraction": 1.0,
+      "refined_p95": 1.0,
+      "read_ratio": 1.109375,
+      "mismatches": 0,
+      "coarse_mismatch_rate": 0.98875
+    },
+    {
+      "case": "correlated",
+      "bits": 4,
+      "n": 800,
+      "refined_fraction": 1.0,
+      "refined_p95": 1.0,
+      "read_ratio": 1.140625,
+      "mismatches": 0,
+      "coarse_mismatch_rate": 0.985
+    },
+    {
+      "case": "correlated",
+      "bits": 8,
+      "n": 800,
+      "refined_fraction": 0.907861328125,
+      "refined_p95": 0.994140625,
+      "read_ratio": 1.173486328125,
+      "mismatches": 0,
+      "coarse_mismatch_rate": 0.4375
+    },
+    {
+      "case": "correlated_centered",
+      "bits": 2,
+      "n": 800,
+      "refined_fraction": 1.0,
+      "refined_p95": 1.0,
+      "read_ratio": 1.08203125,
+      "mismatches": 0,
+      "coarse_mismatch_rate": 0.83
+    },
+    {
+      "case": "correlated_centered",
+      "bits": 3,
+      "n": 800,
+      "refined_fraction": 0.90668701171875,
+      "refined_p95": 0.970703125,
+      "read_ratio": 1.01996826171875,
+      "mismatches": 0,
+      "coarse_mismatch_rate": 0.43125
+    },
+    {
+      "case": "correlated_centered",
+      "bits": 4,
+      "n": 800,
+      "refined_fraction": 0.17234619140625,
+      "refined_p95": 0.2950195312499999,
+      "read_ratio": 0.31687744140625,
+      "mismatches": 0,
+      "coarse_mismatch_rate": 0.2125
+    },
+    {
+      "case": "correlated_centered",
+      "bits": 8,
+      "n": 800,
+      "refined_fraction": 0.00277587890625,
+      "refined_p95": 0.005859375,
+      "read_ratio": 0.27230712890625,
+      "mismatches": 0,
+      "coarse_mismatch_rate": 0.00875
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "mix": [
+    {
+      "users": 100,
+      "RAM_GB": 8,
+      "quota20_GB": 1.6,
+      "offered_GB": 160.0
+    },
+    {
+      "users": 400,
+      "RAM_GB": 16,
+      "quota20_GB": 3.2,
+      "offered_GB": 1280.0
+    },
+    {
+      "users": 300,
+      "RAM_GB": 32,
+      "quota20_GB": 6.4,
+      "offered_GB": 1920.0
+    },
+    {
+      "users": 150,
+      "RAM_GB": 64,
+      "quota20_GB": 12.8,
+      "offered_GB": 1920.0
+    },
+    {
+      "users": 50,
+      "RAM_GB": 128,
+      "quota20_GB": 25.6,
+      "offered_GB": 1280.0
+    }
+  ],
+  "raw_GB": 6560.0,
+  "sensitivity": [
+    {
+      "online": 0.2,
+      "replicas": 1,
+      "useful_GB": 1049.6000000000001
+    },
+    {
+      "online": 0.2,
+      "replicas": 2,
+      "useful_GB": 524.8000000000001
+    },
+    {
+      "online": 0.2,
+      "replicas": 3,
+      "useful_GB": 349.86666666666673
+    },
+    {
+      "online": 0.4,
+      "replicas": 1,
+      "useful_GB": 2099.2000000000003
+    },
+    {
+      "online": 0.4,
+      "replicas": 2,
+      "useful_GB": 1049.6000000000001
+    },
+    {
+      "online": 0.4,
+      "replicas": 3,
+      "useful_GB": 699.7333333333335
+    },
+    {
+      "online": 0.7,
+      "replicas": 1,
+      "useful_GB": 3673.6000000000004
+    },
+    {
+      "online": 0.7,
+      "replicas": 2,
+      "useful_GB": 1836.8000000000002
+    },
+    {
+      "online": 0.7,
+      "replicas": 3,
+      "useful_GB": 1224.5333333333335
+    }
+  ]
+}

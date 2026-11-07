@@ -1,0 +1,19 @@
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+.env
+.env.*
+measurements/
+*.gguf
+*.safetensors
+*.pem
+*.key
+
+# Private drafting material is never part of the public repository.
+communications/
+private-project-materials/
+website/*Base44*
+docs/downloads/*Base44*
+docs/downloads/*Posts*
+docs/downloads/Kit_IA_cooperative_Renaud_Ben_Lakhal.zip

@@ -1,0 +1,10 @@
+[project]
+name = "ia-cooperative-lab"
+version = "0.1.0"
+description = "Research foundation for personally controlled cooperative AI"
+requires-python = ">=3.11"
+authors = [{ name = "Renaud Ben Lakhal", email = "contact@renaud.brussels" }]
+dependencies = []
+
+[project.optional-dependencies]
+experiment = ["numpy==2.3.5"]
